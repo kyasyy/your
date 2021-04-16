@@ -239,7 +239,7 @@ img,svg{
   .fv-wrapper{
       padding-top: 225px;
       height: 100vh;
-      background-image: url(../img/楕円形\ 1.svg);
+      background-image: url(img/楕円形\ 1.svg);
       background-repeat: no-repeat;
       background-position: top -30px right -85px;
   } 
