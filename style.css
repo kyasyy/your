@@ -6,6 +6,10 @@ html{
 *{
     box-sizing: border-box;
 }
+.wrap{
+	overflow: hidden;
+
+}
 
 body{
     font-family: 'Noto Sans JP', sans-serif;
