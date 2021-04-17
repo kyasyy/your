@@ -7,9 +7,9 @@ html{
     box-sizing: border-box;
 }
 .wrap{
-	overflow: hidden;
-
+    overflow: hidden;
 }
+
 
 body{
     font-family: 'Noto Sans JP', sans-serif;
