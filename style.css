@@ -209,20 +209,20 @@ img,svg{
     right: 0;
     opacity: 1;
   }
-  .hamburger-inner {
+  .hamburger-nav inner {
     padding: 25px;
   }
-  .hamburger-inner ul {
+  .hamburger-nav inner ul {
     list-style: none;
     margin-top: 50px;
     padding: 0;
   }
-  .hamburger-inner ul li {
+  .hamburger-nav inner ul li {
     text-align: right;
     margin: 0;
     border-bottom: 1px solid #333;
   }
-  .hamburger-inner ul li a {
+  .hamburger-nav inner ul li a {
     display: block;
     color: #333;
     font-size: 14px;
@@ -230,7 +230,7 @@ img,svg{
     text-decoration: none;
     transition-duration: 0.2s;
   }
-  .hamburger-inner ul li a:hover {
+  .hamburger-nav inner ul li a:hover {
     background: #e4e4e4;
   }
 
