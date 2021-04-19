@@ -109,7 +109,7 @@ $(function () {
 
 /* ハンバーガー */
 (function($) {
-  var $nav   = $('#hamburger-navArea');
+  var $nav   = $('#hamburger');
   var $btn   = $('.toggle_btn');
   var $mask  = $('#mask');
   var open   = 'open'; // class
