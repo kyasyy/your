@@ -340,12 +340,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
 
-    <!-- スワイパー -->
-    <script type="text/javascript">
+     <!-- スワイパー -->
+     <script type="text/javascript">
         var mySwiper = new Swiper ('.swiper-container', {
-         slidesPerView:3.5,//画像を何枚表示するか
-         spaceBetween: 56,//何ピクセル画像の間隔をあけるか
+         slidesPerView:1,//画像を何枚表示するか
+         spaceBetween: 15,//何ピクセル画像の間隔をあけるか
          centeredSlides : true,//見切らせたい場合メイン画像をセンターにもってくるか
+         breakpoints: {
+    // 768px以上の場合
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 56,//何ピクセル画像の間隔をあけるか
+         centeredSlides : true,//見切らせたい場合メイン画像をセンターにもってくるか
+    },  
+  },
          //自動再生する場合
          autoplay: {
          delay: 5000, //5秒後に次の画像に代わる
@@ -362,10 +370,10 @@
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
          }
+        
         });
       </script>
       <!-- //スワイパー -->
-    
         
      </div>
 
