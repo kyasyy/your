@@ -274,15 +274,10 @@ img,svg{
   }
   .features-content ul{
     display: flex;
-    flex-direction: column;
       justify-content: space-between;
       align-items: center;
   }
-  #reverse{
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-  }
+ 
   
   .features-img {
       width: 380px;
