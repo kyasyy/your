@@ -564,6 +564,19 @@ footer p{
 
 @media screen and (max-width: 768px){
 
+	
+	
+	 /* base */
+  .section-title h2{
+    font-size: 2.4rem;
+    margin: 0;
+  }
+  .section-title:first-of-type{
+    margin-top: 30px;
+}
+  /* //base */
+	
+	
     /* sp-header */
     
     .header-nav{
@@ -572,6 +585,19 @@ footer p{
     .header-btn{
         display: none;
     }
+	.header-logo h2{
+      font-size: 2.0rem;
+    }
+    .header-logo img{
+      width: 35px;
+      height: auto;
+      padding: 3px;
+      padding-left: 10px;
+    } 
+	 /* //sp-header */
+	
+	/* sp-fv */
+	
     .fv-wrapper{
         padding-top: 50px;
     }
@@ -581,6 +607,8 @@ footer p{
     .fv-title{
         font-size: 2rem;
     }
+	
+	/* //sp-fv */
     
     /* ハンバーガー */
     nav {
@@ -653,17 +681,70 @@ footer p{
     z-index: 2;
     cursor: pointer;
   }
-
-    
-      
-      
- 
-  
-
-
-
     /* //sp-header */
+	
+	/* sp-fv */
+    .fv-wrapper{
+        padding-top: 50px;
+        width: 100%;
+    }
+    .fv-content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .fv-text-content{
+      width: 100%;
+      text-align: center;
+    }
+   
+    .fv-title{
+        font-size: 2rem;
+        
+    }
+     /* //sp-fv */
     
+	/* features */
+
+    .features-items h2 {
+      
+      font-size: 2.4rem;
+
+  }
+  .features-content ul{
+    display: flex;
+    flex-direction: column;
+      justify-content: space-between;
+  }
+  #reverse{
+    flex-direction: column-reverse;
+  }
+ 
+  .features-img {
+      width: 100%;
+  }
+  .features-text-content{
+      width: 100%;
+  }
+  .features-text-content h3{
+   font-size: 2.0rem;
+   line-height: 2;
+  }
+
+  /* //features */
+	
+	/* blog */
+  .blog-card-wrapper{
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-card{
+  width: 90%;
+  margin: 20px 0;
+}
+/* //blog */
+	
+	
 
 
 
