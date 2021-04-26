@@ -785,9 +785,9 @@ nav
     flex-direction: column;
 	  justify-content: center;
   }
-  #reverse{
+   #reverse{
     flex-direction: column-reverse;
-	  align-items: center;
+    align-items: center;
     justify-content: center;
   }
  
