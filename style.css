@@ -572,8 +572,6 @@ footer p{
 
 @media screen and (max-width: 768px){
 
-	
-	
 	 /* base */
   .section-title h2{
     font-size: 2.4rem;
@@ -583,21 +581,22 @@ footer p{
     margin-top: 30px;
 }
   /* //base */
-	
-	
+
     /* sp-header */
-	
-　　.header-inner{
+    
+    .header-inner{
       height: 50px;
     }
-    
     .header-nav{
         display: none;
     }
     .header-btn{
         display: none;
     }
-	.header-logo h2{
+    .inner{
+      display: block;
+    }
+    .header-logo h2{
       font-size: 2.0rem;
     }
     .header-logo img{
@@ -605,32 +604,83 @@ footer p{
       height: auto;
       padding: 3px;
       padding-left: 10px;
-    } 
-	 /* //sp-header */
-	
-	/* sp-fv */
-	
+    }
+     /* //sp-header */
+
+  /* sp-fv */
     .fv-wrapper{
         padding-top: 50px;
+        width: 100%;
     }
     .fv-content{
         flex-direction: column-reverse;
+        align-items: center;
     }
+    .fv-text-content{
+      width: 100%;
+      text-align: center;
+    }
+   
     .fv-title{
         font-size: 2rem;
+        
     }
-	
-	/* //sp-fv */
+   .contact-btn{
+     display: none;
+   }
+     /* //sp-fv */
     
     /* ハンバーガー */
-    nav {
-        right: -220px;
-        width: 320px;
-      }
-      /*============
-.toggle_btn
+    /*============
+nav
 =============*/
-.toggle_btn {
+.hamburger-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100px;
+      width: 220px;
+    background: #ffffff;
+    
+    transition: all .5s;
+    z-index: 3;
+    opacity: 0;
+  }
+  .open .hamburger-nav {
+    right: 0;
+    opacity: 1;
+  }
+  .hamburger-nav .inner {
+    padding: 25px;
+  }
+  .hamburger-nav .inner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .hamburger-nav .inner ul li {
+    position: relative;
+    margin: 0;
+    border-bottom: 1px solid #333;
+  }
+  .hamburger-nav .inner ul li a {
+    display: block;
+    color: #333;
+    font-size: 14px;
+    padding: 1em;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  .hamburger-nav .inner ul li a:hover {
+    background: #e4e4e4;
+  }
+  
+  
+  /*============
+  .toggle_btn
+  =============*/
+  .toggle_btn {
     display: block;
     position: fixed;
     top: 10px;
@@ -639,7 +689,8 @@ footer p{
     height: 30px;
     transition: all .5s;
     cursor: pointer;
-    z-index: 999;
+    z-index: 5;
+    color: #333;
   }
   .toggle_btn span {
     display: block;
@@ -650,6 +701,8 @@ footer p{
     background-color: #333;
     border-radius: 4px;
     transition: all .5s;
+    z-index: 1;
+    color: #333;
   }
   .toggle_btn span:nth-child(1) {
     top: 4px;
@@ -661,7 +714,8 @@ footer p{
     bottom: 4px;
   }
   .open .toggle_btn span {
-    background-color:#333;
+    background-color:black;
+    
   }
   .open .toggle_btn span:nth-child(1) {
     -webkit-transform: translateY(10px) rotate(-315deg);
@@ -693,7 +747,11 @@ footer p{
     z-index: 2;
     cursor: pointer;
   }
-    /* //sp-header */
+    /* //ハンバーガー */
+	
+	
+	
+	
 	
 	/* sp-fv */
     .fv-wrapper{
